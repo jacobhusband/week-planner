@@ -90,10 +90,6 @@ nav,
   margin-top: 2rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -222,4 +218,8 @@ input[type="time"] {
   width: 70%;
   text-align: center;
   margin-left: auto;
+}
+
+.hidden {
+  display: none;
 }
