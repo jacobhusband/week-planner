@@ -176,3 +176,50 @@ button {
   background-color: sandybrown;
   font-size: 2rem;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pl-5r {
+  padding-left: 5rem;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: rgb(114, 20, 34);
+  color: rgb(217, 80, 48);
+  border-radius: 50%;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+input[type="time"]::-webkit-datetime-edit-hour-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+/* Minute */
+input[type="time"]::-webkit-datetime-edit-minute-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+/* AM/PM */
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  background-color: #7155d3;
+  border-radius: 15%;
+  color: #fff;
+  padding: 19px 13px;
+}
+
+input[type="time"] {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+}

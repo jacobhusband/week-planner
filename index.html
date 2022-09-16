@@ -53,17 +53,23 @@
       <div class="entry-modal">
         <h1 class="modal-text">Add Entry</h1>
         <form action="">
-          <div class="column"></div>
-          <textarea
-            name="description"
-            id="description"
-            cols="30"
-            rows="10"
-            placeholder="hehehe...."
-            required
-          ></textarea>
-          <input type="time" name="entry-time" required />
-          <button>👁 👄 👁 SUBMIT</button>
+          <div class="row">
+            <div class="column-half flex-column gap-2r pl-5r">
+              <div class="column"></div>
+              <textarea
+                name="description"
+                id="description"
+                cols="18"
+                rows="6"
+                placeholder="   👁      👄      👁"
+                required
+              ></textarea>
+              <input type="time" name="entry-time" required />
+            </div>
+            <div class="column-half align-center justify-center row">
+              <button>👁 👄 👁 SUBMIT</button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
