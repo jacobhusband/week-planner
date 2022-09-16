@@ -67,6 +67,12 @@ function renderTable(day) {
         td.textContent = dayData[i][key];
         tr.prepend(td);
       }
+      var button = document.createElement('button');
+      td = document.createElement('td');
+      button.textContent = 'Delete';
+      button.className = 'delete-button';
+      td.appendChild(button);
+      tr.appendChild(td);
       $tbody.appendChild(tr);
     }
   }
@@ -86,3 +92,13 @@ $entryModal.addEventListener('click', function (event) {
     event.target.className = 'entry-modal-container hidden';
   }
 });
+
+var $table = document.querySelector('table');
+$table.addEventListener('click', deleteEntry);
+
+function deleteEntry(event) {
+  if (event.target.matches('.delete-button')) {
+    var wtf = event.target.parentElement.firstChildElement;
+    console.log(event.target.parentElement.parentElement.firstChildElement.nextElementSibling);
+  }
+}
