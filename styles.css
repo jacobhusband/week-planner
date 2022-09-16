@@ -9,6 +9,34 @@ nav {
   text-align: center;
 }
 
+h1,
+h2 {
+  color: chartreuse;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+h1 {
+  font-size: 16rem;
+}
+
+h2 {
+  font-size: 8rem;
+}
+
+thead {
+  font-size: 1.5rem;
+  background-color: aliceblue;
+  color: ;
+}
+
+tbody {
+  font-size: 1rem;
+  background-color: rgb(255, 17, 164);
+  color: chartreuse;
+}
+
 nav,
 .day {
   background-color: rgb(255, 112, 52);
@@ -45,22 +73,39 @@ nav,
   cursor: pointer;
 }
 
-h1,
-h2 {
+.content-day {
+  font-size: 5rem;
+}
+
+.add-entry {
+  font-size: 3rem;
   color: chartreuse;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  margin: 3rem 0;
+  background-color: rgb(39, 39, 39);
+  border-style: solid;
+  padding: 2rem;
+  border-radius: 50%;
 }
 
-h1 {
-  font-size: 16rem;
-}
-
-h2 {
-  font-size: 8rem;
+.day-view-header {
+  margin-top: 2rem;
 }
 
 .hidden {
   display: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-2r {
+  gap: 2rem;
+}
+
+.m-0 {
+  margin: 0;
 }
