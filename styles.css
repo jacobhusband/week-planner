@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.days-of-the-week {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.days-of-the-week,
+.nav-bar {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
