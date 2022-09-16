@@ -60,3 +60,7 @@ h1 {
 h2 {
   font-size: 8rem;
 }
+
+.hidden {
+  display: none;
+}
