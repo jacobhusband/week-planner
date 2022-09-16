@@ -22,7 +22,7 @@ nav,
 .days-of-the-week {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 100px);
 }
 
 .days-of-the-week,
@@ -36,8 +36,27 @@ nav,
   padding: 0.5rem 0;
   text-align: center;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .day:hover {
   cursor: pointer;
+}
+
+h1,
+h2 {
+  color: chartreuse;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+h1 {
+  font-size: 16rem;
+}
+
+h2 {
+  font-size: 8rem;
 }

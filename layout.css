@@ -17,3 +17,20 @@ body {
 .column-fifth {
   width: 20%;
 }
+
+nav {
+  height: 100px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-four-fifth {
+  flex-basis: 80%;
+  align-self: center;
+}
+
+.w-100 {
+  width: 100%;
+}
