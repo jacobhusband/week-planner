@@ -49,9 +49,11 @@ function handleFormSubmit(event) {
   var description = $form.elements.description.value;
   var entryTime = $form.elements['entry-time'].value;
   var h1Text = $h1[1].textContent.toLowerCase();
-  data[h1Text] = [{ description, time: entryTime }];
+  data[h1Text].push({ description, time: entryTime });
   event.target.closest('.entry-modal-container').classList.add('hidden');
+  removeTableData();
   renderTable(h1Text);
+  $form.reset();
 }
 
 function renderTable(day) {
@@ -74,4 +76,13 @@ function storeData(event) {
   localStorage.setItem('data', JSON.stringify(data));
 }
 
-data = JSON.parse(localStorage.getItem('data'));
+if (JSON.parse(localStorage.getItem('data'))) {
+  data = JSON.parse(localStorage.getItem('data'));
+}
+var $entryModal = document.querySelector('.entry-modal-container');
+
+$entryModal.addEventListener('click', function (event) {
+  if (!event.target.matches('.entry-modal') && event.target.matches('.entry-modal-container')) {
+    event.target.className = 'entry-modal-container hidden';
+  }
+});
