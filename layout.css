@@ -5,10 +5,13 @@
 body {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(41, 41, 41);
+  background-color: rgb(74, 65, 42);
 }
 
 .container {
   width: 100vw;
+  height: 100vh;
 }
 
 .column-fifth {
