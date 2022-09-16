@@ -28,7 +28,7 @@ h2 {
 thead {
   font-size: 1.5rem;
   background-color: aliceblue;
-  color: ;
+  color: limegreen;
 }
 
 tbody {
@@ -108,4 +108,37 @@ nav,
 
 .m-0 {
   margin: 0;
+}
+
+.table-layout {
+  width: 100%;
+}
+
+th,
+td {
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+th {
+  font-size: 2rem;
+}
+
+td:nth-child(even) {
+  width: 30rem;
+}
+
+.mt-2r {
+  margin-top: 2rem;
+}
+
+table tr:last-child td:first-child {
+  border: 10px solid rgb(255, 17, 164);
+  border-bottom-left-radius: 50px;
+}
+
+table tr:last-child td:last-child {
+  border: 10px solid rgb(255, 17, 164);
+  border-bottom-right-radius: 50px;
 }
