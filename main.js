@@ -5,7 +5,7 @@ var data = {
   thursday: [],
   friday: [],
   saturday: [],
-  sunday: [],
+  sunday: []
 };
 var $daysOfTheWeek = document.querySelector('.days-of-the-week');
 var $addEntryButton = document.querySelector('.add-entry');
@@ -35,5 +35,5 @@ function handleFormSubmit(event) {
   var description = $form.elements.description.value;
   var entryTime = $form.elements['entry-time'].value;
   var h1Text = $h1.textContent.toLowerCase();
-  data[h1Text] = [{description: description, time: entryTime}]
+  data[h1Text] = [{ description, time: entryTime }];
 }
